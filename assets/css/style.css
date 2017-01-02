@@ -69,6 +69,7 @@ p {
     text-decoration: none;
     color: #39f1c8; }
     .description a:hover {
+      transition: .5s;
       opacity: .7; }
 
 .dark-background {

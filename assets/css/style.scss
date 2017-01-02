@@ -96,6 +96,7 @@ p {
 		color: $accent-color;
 
 		&:hover {
+			transition: .5s;
 			opacity: .7;
 		}
 	}
