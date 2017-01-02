@@ -110,6 +110,7 @@ h1 {
   padding: 2rem; }
 
 .cursor {
+  color: #FFFFFF;
   font-weight: bold; }
 
 @keyframes blinking {
