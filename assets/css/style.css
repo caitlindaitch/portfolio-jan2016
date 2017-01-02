@@ -205,7 +205,8 @@ h1 {
   margin-top: 2rem;
   display: inline-block;
   background-size: 100% 200%;
-  background-image: linear-gradient(to top, #39f1c8 50%, transparent 50%); }
+  background-image: linear-gradient(to top, #39f1c8 50%, transparent 50%);
+  transition: all .5s ease; }
   .button:hover {
     background-position: 0 100%;
     transition: all .5s ease;
