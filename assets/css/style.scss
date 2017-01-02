@@ -86,16 +86,20 @@ p {
 	}
 }
 
+.terminal-font {
+	color: #05FF00;
+}
+
 .description {
 	display: none;
 	font-weight: 300;
-	color: #FFFFFF;
+	color: #05FF00;
 	font-size: 18px;
 	font-family: $terminal-font;
 
 	a {
 		text-decoration: none;
-		color: $accent-color;
+		color: #FFFFFF;
 
 		&:hover {
 			transition: .5s;

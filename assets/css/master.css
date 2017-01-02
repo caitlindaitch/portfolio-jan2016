@@ -64,15 +64,18 @@ p {
   .bottom-navigation.inactive:hover {
     animation: .5s normal hover-scaling ease-in-out; }
 
+.terminal-font {
+  color: #05FF00; }
+
 .description {
   display: none;
   font-weight: 300;
-  color: #FFFFFF;
+  color: #05FF00;
   font-size: 18px;
   font-family: "Anonymous Pro", serif; }
   .description a {
     text-decoration: none;
-    color: #39f1c8; }
+    color: #FFFFFF; }
     .description a:hover {
       transition: .5s;
       opacity: .7; }
