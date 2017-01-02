@@ -31,9 +31,12 @@ p {
 
 .container {
   height: 100vh;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
 
 @keyframes hover-scaling {
   0% {
@@ -123,5 +126,3 @@ h1 {
   height: 90%;
   font-family: "Anonymous Pro", serif;
   font-size: 16px; }
-
-/*# sourceMappingURL=style.css.map */
