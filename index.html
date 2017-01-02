@@ -8,14 +8,31 @@
 		<link rel="stylesheet" href="assets/css/master.css" />
 		<title>Caitlin Daitch: Front-End Developer</title>
 	</head>
-<!--
-...****...****...**..******..**.....**..****....**..
-..**.....**..**..**....**....**.....**..**.**...**..
-..**.....******..**....**....**.....**..**..**..**..
-..**.....**..**..**....**....**.....**..**...**.**..
-...****..**..**..**....**....*****..**..**....****..
--->
 	<body ng-app="CaitlinPortfolio">
+		<div class="info-icon">
+			<a id="info">
+				<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<g id="Page-1-info" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<g id="Artboard-info" transform="translate(-32.000000, -138.000000)">
+							<path d="M63,200 C80.1208272,200 94,186.120827 94,169 C94,151.879173 80.1208272,138 63,138 C45.8791728,138 32,151.879173 32,169 C32,186.120827 45.8791728,200 63,200 Z M61.28,152.08 C61.28,154.72 63.38,156.82 66.02,156.82 C68.66,156.82 70.82,154.72 70.82,152.08 C70.82,149.44 68.66,147.28 66.02,147.28 C63.38,147.28 61.28,149.44 61.28,152.08 Z M69.08,160 L60.5,160 L56.18,180.4 C55.94,181.42 55.82,182.44 55.82,183.4 C55.82,187.18 57.68,190 61.94,190 C63.98,190 66.5,189.64 68.18,184.48 C67.7,184.66 67.04,184.66 66.62,184.66 C64.94,184.66 64.46,183.7 64.46,182.44 C64.46,181.78 64.58,181.12 64.76,180.4 L69.08,160 Z" id="info"></path>
+						</g>
+					</g>
+				</svg>
+			</a>
+		</div>
+		<div class="background-overlay display-none" id="overlay"></div>
+		<div class="modal display-none">
+			<div class="close-icon" id="close-icon">X</div>
+			<div class="modal-content">
+				<img lazy-load="assets/images/caitlin-headshot.png" class="headshot">
+				<h2 class="header-font text-align-center">About Caitlin Daitch</h2>
+				<p>Full-time programmer. Part-time designer. Part-time artist.</p>
+				<p class="pt-100">For more details on my work experience and personal projects, close this modal and click the blue bar to reveal additional content.</p>
+				<p class="text-align-center">
+					<a class="button" id="close-button">Close</a>
+				</p>
+			</div>
+		</div>
 		<div lazy-load="assets/images/PaintSplatter.jpg" class="bg-img"></div>
 		<div class="container">
 			<div class="logo">

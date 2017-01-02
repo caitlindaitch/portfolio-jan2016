@@ -1,5 +1,18 @@
 (function(){
 	var expandedInfo = false;
+	var expandedModal = false;
+
+	function openCloseModal(){
+		if (!expandedModal) {
+			$(".background-overlay").fadeIn();
+			$(".modal").fadeIn();
+			expandedModal = true;
+		} else {
+			$(".background-overlay").fadeOut();
+			$(".modal").fadeOut();
+			expandedModal = false;
+		}
+	}
 
 	function expandCollapseInfo(){
 		if (!expandedInfo) {
@@ -20,4 +33,6 @@
 	}
 
 	$("#bottomNav").click(expandCollapseInfo);
+	$("#info").click(openCloseModal);
+	$("#close-button, #overlay, #close-icon").click(openCloseModal);
 }());
