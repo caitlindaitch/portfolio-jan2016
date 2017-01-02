@@ -31,20 +31,37 @@ p {
 
 .container {
   height: 100vh;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+@-webkit-keyframes hover-scaling {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01); }
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
 
 @keyframes hover-scaling {
   0% {
-    transform: scale(1); }
+    -webkit-transform: scale(1);
+            transform: scale(1); }
   50% {
-    transform: scale(1.01); }
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01); }
   0% {
-    transform: scale(1); } }
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
 .bottom-navigation {
   position: absolute;
   bottom: 2rem;
@@ -60,7 +77,8 @@ p {
   .bottom-navigation:hover {
     cursor: pointer; }
   .bottom-navigation.inactive:hover {
-    animation: .5s normal hover-scaling ease-in-out; }
+    -webkit-animation: .5s normal hover-scaling ease-in-out;
+            animation: .5s normal hover-scaling ease-in-out; }
 
 .description {
   display: none;
@@ -110,13 +128,20 @@ h1 {
 .cursor {
   font-weight: bold; }
 
+@-webkit-keyframes blinking {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 @keyframes blinking {
   0% {
     opacity: 1; }
   100% {
     opacity: 0; } }
 .blink {
-  animation: blinking 1s infinite; }
+  -webkit-animation: blinking 1s infinite;
+          animation: blinking 1s infinite; }
 
 .terminal {
   height: 90%;
