@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro");
 * {
   box-sizing: border-box; }
 
 body {
   margin: 0; }
+
+p {
+  margin: 0; }
+
+.pt-100 {
+  padding-top: 1rem; }
 
 .fade {
   opacity: 0; }
@@ -28,13 +35,6 @@ body {
   justify-content: center;
   align-items: center; }
 
-@keyframes initial-scaling {
-  0% {
-    transform: scale(1); }
-  50% {
-    transform: scale(1.03); }
-  100% {
-    transform: scale(1); } }
 @keyframes hover-scaling {
   0% {
     transform: scale(1); }
@@ -48,24 +48,44 @@ body {
   left: 2rem;
   width: calc(100% - 4rem);
   padding: 1rem;
-  background-color: rgba(57, 241, 200, 0.8);
+  background: rgba(57, 241, 200, 0.8);
   font-family: "Playfair Display", serif;
-  color: white; }
+  color: white;
+  transition: 1s;
+  max-height: 90%;
+  overflow: scroll; }
   .bottom-navigation:hover {
     cursor: pointer; }
   .bottom-navigation.inactive:hover {
     animation: .5s normal hover-scaling ease-in-out; }
 
-.initial-scale {
-  animation: .5s normal initial-scaling ease-in-out;
-  animation-delay: 1s; }
-
 .description {
-  display: none; }
+  display: none;
+  font-weight: 300;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: "Anonymous Pro", serif; }
+  .description a {
+    text-decoration: none;
+    color: #39f1c8; }
+    .description a:hover {
+      opacity: .7; }
+
+.dark-background {
+  background: rgba(0, 0, 0, 0.7); }
+
+.bold {
+  font-weight: bold; }
 
 h1 {
   margin: 0;
   display: inline-block; }
+
+.separator {
+  height: 3px;
+  background-color: #FFFFFF;
+  width: 5rem;
+  margin-top: 1rem; }
 
 .text-shadow {
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.15); }
@@ -75,7 +95,37 @@ h1 {
   font-family: "Fjalla One", sans-serif;
   font-size: 42px; }
 
+.subhead {
+  font-family: "Playfair Display", serif; }
+
+.projects {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem; }
+
 .logo {
   text-align: center; }
+
+.samples {
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 2rem; }
+
+.cursor {
+  font-weight: bold; }
+
+@keyframes blinking {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+.blink {
+  animation: blinking 1s infinite; }
+
+.terminal {
+  height: 90%;
+  font-family: "Anonymous Pro", serif;
+  font-size: 16px; }
 
 /*# sourceMappingURL=style.css.map */

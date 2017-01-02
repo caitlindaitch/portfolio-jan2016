@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One");
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
 
 $accent-color: #39f1c8;
+$dark-accent: #13B994;
 $body-font: 'Playfair Display', serif;
 $header-font: 'Fjalla One', sans-serif;
+$terminal-font: 'Anonymous Pro', serif;
 
 * {
 	box-sizing: border-box;
@@ -11,6 +14,14 @@ $header-font: 'Fjalla One', sans-serif;
 
 body {
 	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+.pt-100 {
+	padding-top: 1rem;
 }
 
 .fade {
@@ -39,18 +50,6 @@ body {
 	align-items: center;
 }
 
-@keyframes initial-scaling {
-	0% {
-		transform: scale(1.0);
-	}
-	50% {
-		transform: scale(1.03);
-	}
-	100% {
-		transform: scale(1.0);
-	}
-}
-
 @keyframes hover-scaling {
 	0% {
 		transform: scale(1.0);
@@ -69,9 +68,12 @@ body {
 	left: 2rem;
 	width: calc(100% - 4rem);
 	padding: 1rem;
-	background-color: transparentize($accent-color, .2);
+	background: transparentize($accent-color, .2);
 	font-family: $body-font;
 	color: white;
+	transition: 1s;
+	max-height: 90%;
+	overflow: scroll;
 
 	&:hover {
 		cursor: pointer;
@@ -82,18 +84,41 @@ body {
 	}
 }
 
-.initial-scale {
-	animation: .5s normal initial-scaling ease-in-out;
-	animation-delay: 1s;
-}
-
 .description {
 	display: none;
+	font-weight: 300;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-family: $terminal-font;
+
+	a {
+		text-decoration: none;
+		color: $accent-color;
+
+		&:hover {
+			opacity: .7;
+		}
+	}
+}
+
+.dark-background {
+	background: rgba(0,0,0,.7);
+}
+
+.bold {
+	font-weight: bold;
 }
 
 h1 {
 	margin: 0;
 	display: inline-block;
+}
+
+.separator {
+	height: 3px;
+	background-color: #FFFFFF;
+	width: 5rem;
+	margin-top: 1rem;
 }
 
 .text-shadow {
@@ -107,6 +132,47 @@ h1 {
 	font-size: 42px;
 }
 
+.subhead {
+	font-family: $body-font;
+}
+
+.projects {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+}
+
 .logo {
 	text-align: center;
+}
+
+.samples {
+	width: 50%;
+	margin: 0 auto;
+	text-align: left;
+	padding: 2rem;
+}
+
+.cursor {
+	font-weight: bold;
+}
+
+@keyframes blinking {
+ 	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.blink {
+	animation: blinking 1s infinite;
+}
+
+.terminal {
+	height: 90%;
+	font-family: $terminal-font;
+	font-size: 16px;
 }
