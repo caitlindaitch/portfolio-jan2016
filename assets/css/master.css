@@ -124,3 +124,8 @@ h1 {
   height: 90%;
   font-family: "Anonymous Pro", serif;
   font-size: 16px; }
+
+@media only screen and (max-width: 768px) {
+  .bottom-navigation {
+    max-height: calc(90% - 70px);
+    margin-bottom: calc(1rem + 60px); } }
