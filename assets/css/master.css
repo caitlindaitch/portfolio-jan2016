@@ -49,9 +49,10 @@ p {
   cursor: pointer;
   overflow: hidden; }
   .info-icon #Artboard-info {
+    transition: all .5s ease;
     fill: #000000; }
   .info-icon:hover #Artboard-info {
-    transition: .5s;
+    transition: all .5s ease;
     fill: #39f1c8; }
 
 .container {

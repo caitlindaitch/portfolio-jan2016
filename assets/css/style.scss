@@ -67,13 +67,14 @@ p {
 	overflow: hidden;
 
 	#Artboard-info {
+		transition: all .5s ease;
 		fill: #000000;
 	}
 
 	&:hover {
 
 		#Artboard-info {
-			transition: .5s;
+			transition: all .5s ease;
 			fill: $accent-color;
 		}
 	}
