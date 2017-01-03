@@ -7,6 +7,9 @@
 body {
   margin: 0; }
 
+a {
+  text-decoration: none; }
+
 p {
   margin: 0; }
 
@@ -54,6 +57,24 @@ p {
   .info-icon:hover #Artboard-info {
     transition: all .5s ease;
     fill: #39f1c8; }
+
+.icons {
+  text-align: center; }
+  .icons svg {
+    margin: .5rem;
+    display: inline-block; }
+  .icons #GitHub-Mark {
+    fill: #000000;
+    transition: all .5s ease; }
+  .icons svg:hover #GitHub-Mark {
+    fill: #39f1c8;
+    transition: all .5s ease; }
+  .icons #linkedin-icon {
+    fill: #000000;
+    transition: all .5s ease; }
+  .icons svg:hover #linkedin-icon {
+    fill: #39f1c8;
+    transition: all .5s ease; }
 
 .container {
   position: relative;
@@ -203,7 +224,7 @@ h1 {
   font-size: 24px;
   padding: 10px;
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: inline-block;
   background-size: 100% 200%;
   background-image: linear-gradient(to top, #39f1c8 50%, transparent 50%);
