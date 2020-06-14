@@ -250,6 +250,10 @@ h1 {
     overflow: scroll; }
 
   .modal-content {
-    padding: 1rem; } }
+    padding: 1rem; }
+
+  .bg-img {
+    width: 200%;
+    top: -300px; } }
 
 /*# sourceMappingURL=style.css.map */
