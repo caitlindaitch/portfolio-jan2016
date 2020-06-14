@@ -5,58 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" type="image/x-icon" href="assets/images/cd-favicon.png" />
 		<link rel="stylesheet" href="assets/css/normalize.css" />
-		<link rel="stylesheet" href="assets/css/master.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
 		<title>Caitlin Daitch: Front-End Developer</title>
 	</head>
 	<body ng-app="CaitlinPortfolio">
-		<div class="info-icon">
-			<a id="info">
-				<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-					<g id="Page-1-info" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-						<g id="Artboard-info" transform="translate(-32.000000, -138.000000)">
-							<path d="M63,200 C80.1208272,200 94,186.120827 94,169 C94,151.879173 80.1208272,138 63,138 C45.8791728,138 32,151.879173 32,169 C32,186.120827 45.8791728,200 63,200 Z M61.28,152.08 C61.28,154.72 63.38,156.82 66.02,156.82 C68.66,156.82 70.82,154.72 70.82,152.08 C70.82,149.44 68.66,147.28 66.02,147.28 C63.38,147.28 61.28,149.44 61.28,152.08 Z M69.08,160 L60.5,160 L56.18,180.4 C55.94,181.42 55.82,182.44 55.82,183.4 C55.82,187.18 57.68,190 61.94,190 C63.98,190 66.5,189.64 68.18,184.48 C67.7,184.66 67.04,184.66 66.62,184.66 C64.94,184.66 64.46,183.7 64.46,182.44 C64.46,181.78 64.58,181.12 64.76,180.4 L69.08,160 Z" id="info"></path>
-						</g>
-					</g>
-				</svg>
-			</a>
-		</div>
-		<div class="background-overlay display-none" id="overlay"></div>
-		<div class="modal display-none">
-			<div class="close-icon" id="close-icon">X</div>
-			<div class="modal-content">
-				<img lazy-load="assets/images/caitlin-headshot.png" class="headshot">
-				<h2 class="header-font text-align-center">About Caitlin Daitch</h2>
-				<p>Full-time programmer. Part-time designer. Part-time artist.</p>
-				<p class="pt-100">For more details on my work experience and personal projects, close this modal and click the blue bar to reveal additional content.</p>
-				<div class="icons pt-100">
-					<a href="https://www.linkedin.com/in/caitlindaitch" target="_blank">
-						<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-							<g id="Page-1-linkedin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-								<g id="linkedin-icon">
-									<g id="Group-5-linkedin">
-										<path d="M28.1219304,28.1196667 L23.2291937,28.1196667 L23.2291937,20.4606111 C23.2291937,18.634 23.1968036,16.2848889 20.685655,16.2848889 C18.1384496,16.2848889 17.7497685,18.2758889 17.7497685,20.3298333 L17.7497685,28.1196667 L12.8570317,28.1196667 L12.8570317,12.3713333 L17.5517612,12.3713333 L17.5517612,14.5248889 L17.6189859,14.5248889 C18.2722879,13.2861667 19.8691803,11.9808333 22.2501574,11.9808333 C27.2070632,11.9808333 28.1219304,15.2417222 28.1219304,19.4822222 L28.1219304,28.1196667 Z M7.33910515,10.2196111 C5.77032483,10.2196111 4.5022223,8.94788889 4.5022223,7.38222222 C4.5022223,5.81472222 5.77032483,4.543 7.33910515,4.543 C8.90360754,4.543 10.1753769,5.81472222 10.1753769,7.38222222 C10.1753769,8.94788889 8.90360754,10.2196111 7.33910515,10.2196111 Z M4.89090337,28.1196667 L9.78730694,28.1196667 L9.78730694,12.3713333 L4.89090337,12.3713333 L4.89090337,28.1196667 Z M30.5591318,0 L2.43536798,0 C1.092096,0 0,1.06577778 0,2.37966667 L0,30.6191111 C0,31.933 1.092096,33 2.43536798,33 L30.5591318,33 C31.9054595,33 33,31.933 33,30.6191111 L33,2.37966667 C33,1.06577778 31.9054595,0 30.5591318,0 L30.5591318,0 Z" id="Fill-4-linkedin"></path>
-									</g>
-								</g>
-							</g>
-						</svg>
-					</a>
-					<a href="https://github.com/caitlindaitch" target="_blank">
-						<svg width="33px" height="32px" viewBox="0 0 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-							<g id="Page-1-github" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-								<g id="GitHub-Mark" transform="translate(-132.000000, -53.000000)">
-									<path d="M148.288,53.1125666 C139.294,53.1125666 132,60.4055666 132,69.4025666 C132,76.5995666 136.667,82.7045666 143.14,84.8585666 C143.955,85.0085666 144.252,84.5055666 144.252,84.0735666 C144.252,83.6875666 144.238,82.6625666 144.23,81.3035666 C139.699,82.2875666 138.743,79.1195666 138.743,79.1195666 C138.002,77.2375666 136.934,76.7365666 136.934,76.7365666 C135.455,75.7265666 137.046,75.7465666 137.046,75.7465666 C138.681,75.8615666 139.541,77.4255666 139.541,77.4255666 C140.994,79.9145666 143.354,79.1955666 144.282,78.7785666 C144.43,77.7265666 144.851,77.0085666 145.316,76.6015666 C141.699,76.1905666 137.896,74.7925666 137.896,68.5505666 C137.896,66.7725666 138.531,65.3175666 139.573,64.1795666 C139.405,63.7675666 138.846,62.1105666 139.733,59.8685666 C139.733,59.8685666 141.1,59.4305666 144.212,61.5385666 C145.511,61.1765666 146.905,60.9965666 148.29,60.9895666 C149.674,60.9965666 151.067,61.1765666 152.368,61.5385666 C155.478,59.4305666 156.843,59.8685666 156.843,59.8685666 C157.732,62.1105666 157.173,63.7675666 157.006,64.1795666 C158.05,65.3175666 158.68,66.7725666 158.68,68.5505666 C158.68,74.8085666 154.871,76.1855666 151.243,76.5885666 C151.827,77.0915666 152.348,78.0855666 152.348,79.6055666 C152.348,81.7825666 152.328,83.5395666 152.328,84.0735666 C152.328,84.5095666 152.622,85.0165666 153.448,84.8575666 C159.916,82.6985666 164.579,76.5975666 164.579,69.4025666 C164.579,60.4055666 157.285,53.1125666 148.288,53.1125666" id="Fill-3-github"></path>
-								</g>
-							</g>
-						</svg>
-					</a>
-				</div>
-				<p class="text-align-center">
-					<a class="button" id="close-button">Close</a>
-				</p>
-			</div>
-		</div>
-		<div lazy-load="assets/images/PaintSplatter.jpg" class="bg-img"></div>
 		<div class="container">
+			<div lazy-load="assets/images/PaintSplatter.jpg" class="bg-img"></div>
 			<div class="logo">
 				<svg width="55px" height="55px" viewBox="0 0 55 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 					<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -69,32 +23,10 @@
 					</g>
 				</svg>
 				<div class="title text-shadow">
-					Web Developer.
+					Caitlin Daitch
 				</div>
-				<div class="bottom-navigation inactive" id="bottomNav">
-					<div class="subhead">
-						<h1>Caitlin Daitch.</h1>
-						<div class="separator"></div>
-					</div>
-					<div class="terminal">
-						<div auto-type type-content="$ Just a creative nerd living out her childhood dreams of getting paid to code and design. Click here to find out more." blink-speed="75" class="pt-100"></div>
-					</div>
-					<div class="description terminal">
-						<p class="pt-100">$ cd ~/portfolio/experience/</p>
-						<p class="pt-100">~/portfolio/experience/</p>
-						<p class="pt-100">$ Graduate of General Assembly's <span class="bold">Web Development Immersive</span> program.</p>
-						<p class="pt-100">$ Former Teaching Assistant of General Assembly's <span class="bold">Front-End Web Development</span> part-time course.</p>
-						<p class="pt-100">$ Currently a <span class="bold">Front-End Developer</span> at <a href="https://www.fundrise.com" target="_blank">Fundrise</a>.</p>
-						<p class="pt-100">$ cd ~/portfolio/projects/</p>
-						<p class="pt-100">~/portfolio/projects/</p>
-						<p class="pt-100">$ <a href="https://bar-in-mind.herokuapp.com/" target="_blank">Bar In Mind</a>: An application to find DC bars in your neighborhood built with Ruby on Rails, Sass, and PostgreSQL /* <a href="https://github.com/caitlindaitch/bar_in_mind" target="_blank">GH Repo</a> */</p>
-						<p class="pt-100">$ <a href="https://mood-wave.herokuapp.com/" target="_blank">Mood Wave</a>: A playlist generator made with Express, Node.js, AngularJS, Sass, MongoDB, and the LastFM API. /* <a href="https://github.com/caitlindaitch/moodWave" target="_blank">GH Repo</a> */</p>
-						<p class="pt-100">$ <a href="https://lorem-ipsum-on-mars.herokuapp.com/lyrics" target="_blank">Lorem Ipsum On Mars</a>: A David Bowie Lorem Ipsum Generator made with Express, Node.js, Sass, MongoDB, and AngularJS. /* <a href="https://github.com/margolanier/lorem-ipsum-on-mars" target="_blank">GH Repo</a> */</p>
-						<p class="pt-100">$ <a href="https://auto-pilot.herokuapp.com/#/trips" target="_blank">Auto Pilot</a>: A trip planning app built with Rails, AngularJS, Sass, PostgreSQL, and the Google Maps API /* <a href="https://github.com/khenry10/project_3" target="_blank">GH Repo</a> */</p>
-						<p class="pt-100">$ <a href="https://caitlindaitch.github.io/autoType/" target="_blank">AutoType</a>: An AngularJS directive to create a typing effect (as seen on this page) /* <a href="https://github.com/caitlindaitch/autotype" target="_blank">GH Repo</a> */</p>
-						<p class="pt-100">$ <a href="http://caitlindaitch.github.io/ConcentrationGame" target="_blank">Font Concentration</a>: A game made with vanilla JavaScript and Sass. /* <a href="https://github.com/caitlindaitch/ConcentrationGame">GH Repo</a> */</p>
-						<p class="pt-100">$ <a href="https://www.behance.net/portfolio/editor?project_id=46935469" target="_blank">Artwork</a>: See my Behance project for examples of my Zentangles and Digital artwork.
-					</div>
+				<div class="subhead text-shadow">
+					Software Engineer turned Product Manager.
 				</div>
 			</div>
 		</div>

@@ -40,8 +40,9 @@ p {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  top: -250px;
   width: 100%;
-  height: 100%;
+  height: 200%;
   z-index: -1; }
 
 .info-icon {
@@ -81,7 +82,8 @@ p {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden; }
 
 @keyframes hover-scaling {
   0% {
@@ -146,7 +148,8 @@ h1 {
   font-size: 42px; }
 
 .subhead {
-  font-family: "Playfair Display", serif; }
+  font-family: "Playfair Display", serif;
+  color: #FFFFFF; }
 
 .logo {
   text-align: center; }
